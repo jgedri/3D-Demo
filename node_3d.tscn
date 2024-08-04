@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://de5h3hvrde8nb"]
+[gd_scene load_steps=3 format=3 uid="uid://de5h3hvrde8nb"]
+
+[ext_resource type="ArrayMesh" uid="uid://csvt3l10r64ih" path="res://obj/Residential Buildings 001.obj" id="1_rlsb1"]
 
 [sub_resource type="Environment" id="Environment_r0svy"]
 ambient_light_source = 3
@@ -8,3 +10,6 @@ ambient_light_color = Color(0.211765, 0.215686, 0.498039, 1)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_r0svy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_rlsb1")
