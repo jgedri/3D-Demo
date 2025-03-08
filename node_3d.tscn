@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://de5h3hvrde8nb"]
+[gd_scene load_steps=6 format=3 uid="uid://de5h3hvrde8nb"]
 
 [ext_resource type="ArrayMesh" uid="uid://csvt3l10r64ih" path="res://obj/Residential Buildings 001.obj" id="1_rlsb1"]
+[ext_resource type="Script" uid="uid://bmqhla0ajftkq" path="res://camera_3d.gd" id="2_noarx"]
 
 [sub_resource type="Environment" id="Environment_r0svy"]
 ambient_light_source = 3
@@ -21,3 +22,4 @@ mesh = ExtResource("1_rlsb1")
 [node name="Camera3D" type="Camera3D" parent="."]
 environment = SubResource("Environment_1ovpi")
 attributes = SubResource("CameraAttributesPractical_lr65k")
+script = ExtResource("2_noarx")
